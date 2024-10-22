@@ -38,8 +38,8 @@
   border-radius: 50%;
   margin-top: 20px;
   margin-left: 20px;
+  margin-right: 20px;
   border: 5px solid rgb(189, 104, 47);
-  transition: all 2s;
   box-sizing: border-box;
 }
 .circle:hover {
@@ -174,8 +174,7 @@ img {
 .three-icon:hover {
   background-color: #767676;
   border-radius: 50%;
-  box-sizing: content-box;
-  border: 3px solid #767676;
+  /* border: 3px solid #767676; */
 }
 .main-element {
   height: 14px;
