@@ -5,7 +5,7 @@
 }
 
 .boundary {
-  background-color: rgb(15, 15, 79);
+  background-color: rgb(196, 75, 101);
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -91,7 +91,7 @@ img {
   /* grid-template-areas: "side-bar header header header" "side-bar main-comp main-comp main-comp"; */
 }
 .side-bar {
-  background-color: rgb(141, 146, 209);
+  background-color: rgba(228, 77, 120, 0.6);
   padding: 48px 16px 0;
   margin: 0 0 0 24px;
   display: flex;
@@ -109,7 +109,7 @@ img {
   font-size: 12px;
 }
 .sid:hover {
-  background-color: rgb(159, 162, 207);
+  outline: dotted 4px rgb(241, 16, 113);
   cursor: pointer;
 }
 
@@ -293,4 +293,38 @@ img {
 .icons {
   width: 16px;
   height: 16px;
+}
+.sticky-logo {
+  position: sticky;
+  bottom: 90px;
+  left: 1200px;
+  z-index: 999;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.sticky-logo-img {
+  width: 40px;
+  height: 40px;
+}
+.sticky-logo:hover + .chatbot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.chatbot {
+  display: none;
+  width: 300px;
+  height: 400px;
+  background-color: #f1f1f1;
+  border: 8px solid rgb(227, 42, 104);
+  font-size: xx-large;
+  position: fixed;
+  left: 600px;
+  background-image: url("./robot.jpg");
+
+  color: #e39eba;
 }
