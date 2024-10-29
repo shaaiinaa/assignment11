@@ -98,6 +98,11 @@ img {
   flex-direction: column;
   grid-row-start: 1;
   grid-row-end: 3;
+  /* position: sticky; */
+  top: 79px;
+}
+.side-item {
+  position: fixed;
 }
 .sid {
   display: flex;
@@ -328,4 +333,8 @@ img {
   background-image: url("./robot.jpg");
 
   color: #e39eba;
+}
+.next-page {
+  text-decoration: none;
+  color: inherit;
 }
