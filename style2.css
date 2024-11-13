@@ -35,7 +35,7 @@
 .button1 {
   margin-left: 20px;
 }
-.circle {
+#circle {
   height: 42px;
   width: 42px;
   background-color: rgb(56, 100, 56);
@@ -46,7 +46,7 @@
   border: 5px solid rgb(189, 104, 47);
   box-sizing: border-box;
 }
-.circle:hover {
+#circle:hover {
   border: 8px dashed rgb(215, 134, 81);
 }
 .search-bar {
@@ -372,4 +372,17 @@ img {
 }
 .size1 {
   display: flex;
+}
+#menu-container {
+  display: flex;
+  flex-direction: column;
+  /* display: none; */
+  background-color: rgb(222, 227, 225);
+  position: absolute;
+  top: 70px;
+  right: 20px;
+}
+#menu-container a {
+  padding: 5px 10px;
+  border: 1px solid black;
 }
