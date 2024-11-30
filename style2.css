@@ -386,3 +386,7 @@ img {
   padding: 5px 10px;
   border: 1px solid black;
 }
+.home {
+  text-decoration: inherit;
+  color: inherit;
+}

@@ -143,161 +143,91 @@ const items = [
     views: "17k views",
     timeAgo: "9 days ago",
   },
+  // {
+  //   redBox1ImageSrc: "./share_eta_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png",
+  //   redBox2ImageSrc:
+  //     "./playlist_play_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png",
+  //   img2Src: "./mqdefault_6s.webp",
+  //   img1Src: "https://i.ytimg.com/vi/xHBOTGyLRKg/hqdefault.jpg",
+  //   time: "10:00",
+  //   titleContent:
+  //     "Graph | Representation of Graph using Adjacency List | L-100",
+  //   iframeSrc: "https://www.youtube.com/embed/xHBOTGyLRKg?si=F7-ZI9W-mhWIKcZt",
+  //   threeIconSrc: "./more_vert_16dp_000000_FILL0_wght400_GRAD0_opsz20.png",
+  //   views: "12k views",
+  //   timeAgo: "10 days ago",
+  // },
+  // {
+  //   redBox1ImageSrc: "./share_eta_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png",
+  //   redBox2ImageSrc:
+  //     "./playlist_play_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png",
+  //   img2Src: "./mqdefault_6s.webp",
+  //   img1Src: "https://i.ytimg.com/vi/XYZ123ABC/hqdefault.jpg",
+  //   time: "10:00",
+  //   titleContent:
+  //     "Graph | Strongly Connected Components (SCC) Explained | L-99",
+  //   iframeSrc: "https://www.youtube.com/embed/XYZ123ABC?si=example1",
+  //   threeIconSrc: "./more_vert_16dp_000000_FILL0_wght400_GRAD0_opsz20.png",
+  //   views: "11k views",
+  //   timeAgo: "11 days ago",
+  // },
+  // {
+  //   redBox1ImageSrc: "./share_eta_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png",
+  //   redBox2ImageSrc:
+  //     "./playlist_play_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png",
+  //   img2Src: "./mqdefault_6s.webp",
+  //   img1Src: "https://i.ytimg.com/vi/ABC456DEF/hqdefault.jpg",
+  //   time: "10:00",
+  //   titleContent: "Dynamic Programming | Matrix Chain Multiplication | L-98",
+  //   iframeSrc: "https://www.youtube.com/embed/ABC456DEF?si=example2",
+  //   threeIconSrc: "./more_vert_16dp_000000_FILL0_wght400_GRAD0_opsz20.png",
+  //   views: "9k views",
+  //   timeAgo: "12 days ago",
+  // },
+  // {
+  //   redBox1ImageSrc: "./share_eta_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png",
+  //   redBox2ImageSrc:
+  //     "./playlist_play_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png",
+  //   img2Src: "./mqdefault_6s.webp",
+  //   img1Src: "https://i.ytimg.com/vi/GHI789JKL/hqdefault.jpg",
+  //   time: "10:00",
+  //   titleContent:
+  //     "Dynamic Programming | Longest Palindromic Subsequence | L-97",
+  //   iframeSrc: "https://www.youtube.com/embed/GHI789JKL?si=example3",
+  //   threeIconSrc: "./more_vert_16dp_000000_FILL0_wght400_GRAD0_opsz20.png",
+  //   views: "7k views",
+  //   timeAgo: "13 days ago",
+  // },
+  // {
+  //   redBox1ImageSrc: "./share_eta_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png",
+  //   redBox2ImageSrc:
+  //     "./playlist_play_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png",
+  //   img2Src: "./mqdefault_6s.webp",
+  //   img1Src: "https://i.ytimg.com/vi/MNO012PQR/hqdefault.jpg",
+  //   time: "10:00",
+  //   titleContent: "Dynamic Programming | Egg Dropping Problem | L-96",
+  //   iframeSrc: "https://www.youtube.com/embed/MNO012PQR?si=example4",
+  //   threeIconSrc: "./more_vert_16dp_000000_FILL0_wght400_GRAD0_opsz20.png",
+  //   views: "5k views",
+  //   timeAgo: "14 days ago",
+  // },
+  // {
+  //   redBox1ImageSrc: "./share_eta_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png",
+  //   redBox2ImageSrc:
+  //     "./playlist_play_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png",
+  //   img2Src: "./mqdefault_6s.webp",
+  //   img1Src: "https://i.ytimg.com/vi/STU345VWX/hqdefault.jpg",
+  //   time: "10:00",
+  //   titleContent: "Dynamic Programming | 0/1 Knapsack Problem | L-95",
+  //   iframeSrc: "https://www.youtube.com/embed/STU345VWX?si=example5",
+  //   threeIconSrc: "./more_vert_16dp_000000_FILL0_wght400_GRAD0_opsz20.png",
+  //   views: "4k views",
+  //   timeAgo: "15 days ago",
+  // },
 ];
+const idx = new URLSearchParams(window.location.search).get("id");
+const abc = document.getElementById("p");
 
-const abc = document.getElementById("circle");
-const menuBar = document.getElementById("menu-container");
-let isMenu = false;
-document.body.addEventListener("click", (e) => {
-  if (e.target.className == "ab") {
-    menubar.style.display = "flex";
-    isMenu = true;
-  }
-  if (isMenu) {
-    menuBar.style.display = "none";
-    isMenu = false;
-  } else if (e.target === abc) {
-    menuBar.style.display = "flex";
-    isMenu = true;
-  }
-});
-//------------------------------------------------------------------------------
-// creating cards by js
-const parent = document.getElementById("root");
-
-const addImage2 = (card, image, image1, time, idx) => {
-  const imgDiv = document.createElement("div");
-  imgDiv.className = "img-element";
-  const img2 = document.createElement("img");
-  img2.src = image1;
-  img2.className = "img2";
-  const img1 = document.createElement("img");
-  img1.src = image;
-  img1.className = "img1";
-  const para = document.createElement("span");
-  para.textContent = time;
-  para.className = "time";
-  imgDiv.appendChild(img1);
-  imgDiv.appendChild(img2);
-  imgDiv.appendChild(para);
-  card.appendChild(imgDiv);
-};
-
-const addRedBox2 = (card, box2) => {
-  const redBox2 = document.createElement("div");
-  redBox2.classList.add("red");
-  redBox2.classList.add("red-box-2");
-  redBox2.innerHTML = `<img class="red-img" src=${box2}></img>`;
-  card.appendChild(redBox2);
-};
-
-const addRedBox1 = (card, box1) => {
-  const redBox1 = document.createElement("div");
-  redBox1.classList.add("red");
-  redBox1.classList.add("red-box-1");
-  redBox1.innerHTML = `<img class=" red-img" src=${box1}></img>`;
-
-  card.appendChild(redBox1);
-};
-
-const addTitleElement = (card, title, icons, index) => {
-  const titleDiv = document.createElement("div");
-  titleDiv.className = "title-element";
-  const titleContent = document.createElement("p");
-  titleContent.textContent = title;
-  titleContent.className = "title-content";
-  const threeIcon = document.createElement("img");
-  threeIcon.src = icons;
-  threeIcon.className = "abc";
-  titleDiv.appendChild(titleContent);
-  titleDiv.appendChild(threeIcon);
-  card.appendChild(titleDiv);
-};
-addMainElement = (card, views, timeAgo) => {
-  const mainDiv = document.createElement("div");
-  mainDiv.className = "main-element";
-
-  mainDiv.innerHTML = `
-      ${views}
-      <span class="dot"></span>
-      ${timeAgo}
-  `;
-  card.appendChild(mainDiv);
-};
-const addDiv = (card, item, index) => {
-  addRedBox1(card, item.redBox1ImageSrc);
-  addRedBox2(card, item.redBox2ImageSrc);
-  addImage2(card, item.img2Src, item.img1Src, item.time, index);
-
-  addTitleElement(card, item.titleContent, item.threeIconSrc, index);
-  addMainElement(card, item.views, item.timeAgo);
-};
-const createCard = (container, item, index) => {
-  const card = document.createElement("div");
-  card.addEventListener("click", () => myFunction(index));
-  card.className = "element";
-  addDiv(card, item, index);
-
-  container.appendChild(card);
-};
-function myFunction(index) {
-  window.open(`./index2.html?id=${index}`, "_blank");
-}
-const createUI = (arr) => {
-  const container = new DocumentFragment();
-
-  arr.forEach((elem, idx) => {
-    createCard(container, elem, idx);
-  });
-
-  parent.appendChild(container);
-};
-createUI(items);
-
-//////////////////////////////////chatbot////////////////////////////////
-
-const chatbot = document.getElementsByClassName("chatbot")[0];
-
-const background = document.getElementsByClassName("blur")[0];
-chatbot.style.overflow = "scroll";
-function stay() {
-  chatbot.style.display = "block";
-  background.style.opacity = "0.2";
-  background.style.pointerEvents = "none";
-  document.body.style.overflow = "hidden";
-  document.body.scroll = "no";
-}
-function hide() {
-  chatbot.style.display = "none";
-  background.style.opacity = "1";
-  background.style.pointerEvents = "all";
-  document.body.style.overflow = "auto";
-}
-const defaultValue = localStorage.getItem("chat-data");
-const data1 = defaultValue ? JSON.parse(defaultValue) : [];
-const check = document.getElementById("check");
-
-data1.forEach((item) => {
-  const div = document.createElement("div");
-  const data = document.createElement("p");
-  data.className = "data";
-  data.textContent = item;
-  div.appendChild(data);
-  check.appendChild(div);
-});
-function showData() {
-  const innerData = document.getElementsByClassName("add-input")[0];
-  const div = document.createElement("div");
-  const data = document.createElement("p");
-  data.className = "data";
-  div.style.display = "block";
-  data.innerText = innerData.value;
-  const chatData = data.innerText;
-  data1.push(chatData);
-
-  localStorage.setItem("chat-data", JSON.stringify(data1));
-
-  innerData.value = "";
-  div.appendChild(data);
-  check.appendChild(div);
-}
+abc.textContent = items[idx].titleContent;
+const iframeClass = document.getElementsByClassName("iframe1")[0];
+iframeClass.src = `${items[idx].iframeSrc}?rel=0&amp;autoplay=1&amp;mute=0`;
